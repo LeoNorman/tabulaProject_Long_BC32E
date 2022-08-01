@@ -15,6 +15,22 @@ h6 {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
 // .header {}
 
 // .about {
@@ -79,6 +95,7 @@ h6 {
             background-color: #fff;
             text-align: center;
             transition: all .3s ease-in-out;
+            overflow: hidden;
 
             &:hover {
                 box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
@@ -90,6 +107,7 @@ h6 {
                 &:hover {
                     img {
                         transform: scale3d(1.05, 1.05, 1.05);
+                        border: none;
                     }
                 }
 
@@ -142,60 +160,177 @@ h6 {
 
 }
 
-.find_course {
-    .container {
+.find_cource {
+    position: relative;
+
+    .container_section {
+        position: relative;
+        top: 0;
+        z-index: 2;
+        padding-top: 90px;
         display: flex;
-        .left{
-            .thumbnail{
-                img{
-
-                }
-            }
+        justify-content: center;
+        @media screen and (max-width: 1050px) {
+            display: block;
         }
+        .left {
+            padding: 20px 30px 20px 20px;
+        }
+
         .right {
-            .div{
-                .form_container{
-                    .form_content{
-                        h4{
+            padding: 0 20px;
+            margin-top: 20px;
+
+            .div {
+                box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+                border-radius: 10px;
+
+                .form_container {
+                    padding: 0 25px;
+                    padding-bottom: 10px;
+                    background: #ffff;
+                    border-radius: 10px;
+
+                    .form_content {
+                        margin-top: 40px;
+
+                        h4 {
+                            font-size: 2.5rem;
+                            font-weight: 700;
+                            margin-bottom: 40px;
                         }
-                        form{
-                            .form-row{
-                                .left{
-                                    span{
 
-                                    }
-                                    input{
+                        form {
+                            .form-row {
+                                padding-bottom: 15px;
 
-                                    }
+                                .left {
+                                    padding: 0;
+
+                                    span {}
                                 }
-                                .right{
-                                    span{
 
+                                .right {
+                                    padding: 0;
+                                    margin: 0;
+
+                                    span {}
+                                }
+
+                                .col-6 {
+                                    width: 140px;
+                                    display: flex;
+                                    justify-content: center;
+
+                                    span {
+                                        i {
+                                            &::before {
+                                                position: absolute;
+                                                left: 20px;
+                                                top: 15px;
+                                                color: #aa017e;
+                                            }
+                                        }
                                     }
-                                    input{
 
+                                    input {
+                                        border-radius: 50px;
+                                        padding: 1em 1em 1em 3.5em !important;
+                                        font-size: .8em !important;
+                                        height: 3.7em;
+                                        display: block;
+                                        background: transparent;
+                                        border: 1px solid rgba(0, 0, 0, .1);
+                                        width: 165px;
+
+                                        @media screen and (max-width: 1050px) {
+                                            width: 100%;
+                                            margin-right: 15px;
+                                        }
                                     }
                                 }
                             }
-                            .form_select{
-                                span{
 
+                            .form_select {
+                                padding-bottom: 15px;
+                                position: relative;
+
+                                span {
+                                    position: absolute;
+                                    z-index: 10;
+                                    top: 8px;
+                                    left: 13px;
+
+                                    i {
+                                        &::before {
+                                            color: #AA017E;
+                                        }
+                                    }
                                 }
-                                select{
 
+                                select {
+                                    font-size: .8em;
+                                    opacity: .8;
+                                    padding: 0 0 0 3em;
+                                    display: block;
+                                    width: 100%;
+                                    border-radius: 50px;
+                                    height: 36px;
+                                    border: 1px solid rgba(0, 0, 0, .1);
                                 }
                             }
-                            .form-text{
-                                span{
 
+                            .form-text {
+                                position: relative;
+
+                                span {
+                                    position: absolute;
+                                    z-index: 10;
+                                    top:13px;
+                                    left: 13px;
+
+                                    i {
+                                        &::before {
+                                            color: #AA017E;
+                                        }
+                                    }
                                 }
-                                textarea{
 
+                                textarea {
+                                    padding: 1em 1em 1em 3.5em;
+                                    height: 90px;
+                                    line-height: 1.5;
+                                    font-size: .8em;
+                                    border-radius: 20px;
+                                    border: 1px solid rgba(0, 0, 0, .1);
+                                    display: block;
+                                    width: 100%;
                                 }
                             }
-                            .form-submit{
-                                .button{
 
+                            .form-submit {
+                                margin-top: 45px;
+
+                                button {
+                                    border-radius: 50px;
+                                    height: 4em;
+                                    font-size: .8em;
+                                    letter-spacing: 1px;
+                                    font-weight: 600;
+                                    border: none;
+                                    background: transparent;
+                                    background-color: #AA017E;
+                                    color: #fff;
+                                    display: block;
+                                    width: 150px;
+                                    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+                                    transition: all .3s;
+
+                                    &:hover {
+                                        background-color: #fff;
+                                        border: 1px solid #AA017E;
+                                        color: #AA017E;
+                                    }
                                 }
                             }
                         }
@@ -204,9 +339,137 @@ h6 {
             }
         }
     }
-    .bottom_img {
-        img {
 
+    .bottom_img {
+        position: absolute;
+        bottom: 0;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+footer {
+    .section_background {
+        background-color: #AA017E;
+        background-image: url(../tabulaProject_Long_BC32E/img/footer_background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+
+        .section_container {
+            padding: 120px 0 160px;
+            margin-left: 20px;
+            color: #fff;
+        }
+
+        .glob {
+            h3 {
+                font-size: 1.55rem;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                li {
+                    border-bottom: 1px solid rgba(0, 0, 0, .1);
+                    width: 65px;
+
+                    a {
+                        font-size: .9em;
+                        color: #fff;
+                        text-decoration: none;
+                        transition: all .3s;
+
+                        &:hover {
+                            opacity: .8;
+                        }
+                    }
+                }
+
+                .first {
+                    padding-bottom: 12px;
+                }
+
+                .clone {
+                    padding: 12px 0;
+                }
+            }
+        }
+
+        .contact {
+            .detail {
+                p {
+                    margin-bottom: 10px;
+
+                    i {
+                        font-size: 1rem;
+                    }
+
+                    span {
+                        font-size: .9em;
+                        padding-left: 0.8em;
+                    }
+
+                    a {
+                        display: inline-block;
+                        margin-top: 15px;
+                        color: #fff;
+
+                        i {
+                            padding-right: 15px;
+                            transition: all .3s;
+                        }
+
+                        &:hover {
+                            i {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .newsletter {
+            form {
+                color: #fff;
+
+                input {
+                    border-radius: 50px;
+                    display: block;
+                    border: 1px solid rgba(255, 255, 255, .1);
+                    background-color: #AA017E;
+                    color: #fff;
+                    font-size: 0.9em;
+                    padding: 15px 40px;
+                    text-align: center;
+                    margin-bottom: 8px;
+                }
+
+                button {
+                    padding: 15px 84px;
+                    color: #000;
+                    background-color: #fff;
+                    border: none;
+                    text-align: center;
+                    border-radius: 50px;
+                    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+                    font-size: .8em;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background-color: #b61984;
+                        box-shadow: 0 0 0 1px #fff inset;
+                        color: #fff;
+                    }
+                }
+            }
         }
     }
 }

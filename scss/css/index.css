@@ -262,7 +262,7 @@ a {
 
 footer .section_background {
   background-color: #AA017E;
-  background-image: url(/tabulaProject_Long_BC32E/img/footer_background.jpg);
+  background-image: url(../../img/footer_background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

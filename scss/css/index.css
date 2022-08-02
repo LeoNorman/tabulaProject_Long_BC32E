@@ -229,6 +229,7 @@ a {
 }
 .find_cource .container_section .right .div .form_container .form_content form .form-submit {
   margin-top: 45px;
+  margin-bottom: 60px;
 }
 .find_cource .container_section .right .div .form_container .form_content form .form-submit button {
   border-radius: 50px;
@@ -261,7 +262,7 @@ a {
 
 footer .section_background {
   background-color: #AA017E;
-  background-image: url(../tabulaProject_Long_BC32E/img/footer_background.jpg);
+  background-image: url(/tabulaProject_Long_BC32E/img/footer_background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -331,6 +332,14 @@ footer .section_background .newsletter form input {
   padding: 15px 40px;
   text-align: center;
   margin-bottom: 8px;
+}
+footer .section_background .newsletter form input::placeholder {
+  color: #fff;
+}
+@media screen and (max-width: 576px) {
+  footer .section_background .newsletter form input {
+    background-color: rgba(170, 1, 126, 0);
+  }
 }
 footer .section_background .newsletter form button {
   padding: 15px 84px;

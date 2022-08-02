@@ -29,8 +29,6 @@ a {
     text-decoration: none;
 }
 
-
-
 // .header {}
 
 // .about {
@@ -170,9 +168,11 @@ a {
         padding-top: 90px;
         display: flex;
         justify-content: center;
+
         @media screen and (max-width: 1050px) {
             display: block;
         }
+
         .left {
             padding: 20px 30px 20px 20px;
         }
@@ -180,7 +180,6 @@ a {
         .right {
             padding: 0 20px;
             margin-top: 20px;
-
             .div {
                 box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
                 border-radius: 10px;
@@ -286,7 +285,7 @@ a {
                                 span {
                                     position: absolute;
                                     z-index: 10;
-                                    top:13px;
+                                    top: 13px;
                                     left: 13px;
 
                                     i {
@@ -310,6 +309,7 @@ a {
 
                             .form-submit {
                                 margin-top: 45px;
+                                margin-bottom: 60px;
 
                                 button {
                                     border-radius: 50px;
@@ -354,7 +354,7 @@ a {
 footer {
     .section_background {
         background-color: #AA017E;
-        background-image: url(../tabulaProject_Long_BC32E/img/footer_background.jpg);
+        background-image: url(/tabulaProject_Long_BC32E/img/footer_background.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -448,6 +448,15 @@ footer {
                     padding: 15px 40px;
                     text-align: center;
                     margin-bottom: 8px;
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        background-color: rgb(170, 1, 126, 0);
+                        ;
+                    }
                 }
 
                 button {

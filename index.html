@@ -30,50 +30,216 @@
 </head>
 
 <body>
-  <!-- <header class="header">
-    <div class="container">
-      <div class="logo"></div>
-      <div class="menuPort"></div>
-    </div>
-  </header>
-  <section class="about">
-    <div class="port">
-      <div class="cell">
-        <div class="cell_inner">
-          <div class="cell_wrapper">
-            <div class="about_row about_column_gap_0">
-              <div class="about_col col-xl-6">
-                <div class="col_content">
-                  <div class="col_content_inner">
-                    <div class="separator spacing_medium">
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <img src="./img/crest.png" alt="" />
+      </div>
 
-                    </div>
-                    <div class="about_headline">
+      <ul class="list-unstyled components">
+        <li>
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="#">Wavy</a>
+            </li>
+            <li>
+              <a href="#">Sunny</a>
+            </li>
+            <li>
+              <a href="#">Shady</a>
+            </li>
+          </ul>
+        </li>
 
-                    </div>
-                    <div class="separator spacing_medium">
+        <li class="active">
+          <a href="#aboutSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">About</a>
+          <ul class="collapse list-unstyled" id="aboutSubmenu">
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">About Mentor</a>
+            </li>
+            <li>
+              <a href="#">Our team</a>
+            </li>
+            <li>
+              <a href="#">History</a>
+            </li>
+            <li>
+              <a href="#">Testimonials</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Coming soon</a>
+            </li>
+            <li>
+              <a href="#">404</a>
+            </li>
+          </ul>
+        </li>
 
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="about_col col-xl-6">
-                <div class="col_content">
+        <li>
+          <a href="#coursesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Courses</a>
+          <ul class="collapse list-unstyled" id="coursesSubmenu">
+            <li>
+              <a href="#">Courses</a>
+            </li>
+            <li>
+              <a href="#">Single Courses</a>
+            </li>
+            <li>
+              <a href="#">Schedule</a>
+            </li>
+            <li>
+              <a href="#">Workshop</a>
+            </li>
+            <li>
+              <a href="#">Workshops & Events</a>
+            </li>
+            <li>
+              <a href="#">Get Quote</a>
+            </li>
+          </ul>
+        </li>
 
-                </div>
+        <li>
+          <a href="#blogSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Blog</a>
+          <ul class="collapse list-unstyled" id="blogSubmenu">
+            <li>
+              <a href="#">Standard view</a>
+            </li>
+            <li>
+              <a href="#">Columms view</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#shopSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Shop</a>
+          <ul class="collapse list-unstyled" id="shopSubmenu">
+            <li>
+              <a href="#">Products</a>
+            </li>
+            <li>
+              <a href="#">Cart</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#elementSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Element</a>
+          <ul class="collapse list-unstyled" id="elementSubmenu">
+            <li>
+              <a href="#">Base</a>
+            </li>
+            <li>
+              <a href="#">Common</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="contact-sidebar">
+        <a href="#" class="button">
+          <i class="fa-solid fa-phone-flip"></i>
+          <span>(+1) 555 234-8765</span>
+        </a>
+      </div>
+      <span class="contact_icon">
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </span>
+    </nav>
+
+    <!-- Page Content  -->
+
+    <div id="content">
+      <header class="header">
+        <div class="container_ wow animate__animated animate__fadeIn">
+          <div class="nav-logo">
+            <button type="button" id="sidebarCollapse" class="navbar_toggler">
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <a class="navbar_brand" href="#"><img src="./img/crest.png" alt="..." /></a>
+          </div>
+          <div class="navbar_link">
+            <ul>
+              <li>
+                <a href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Courses</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Shop</a>
+              </li>
+              <li>
+                <a href="#">Elements</a>
+              </li>
+            </ul>
+            <div class="contactbar">
+              <div class="contact-item">
+                <a href="#" class="button">
+                  <i class="fas fa-phone"></i>
+                  <span>(+1) 555 234-8765</span>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </header>
+      <section class="aboutUs">
+        <div class="yellow_image_top">
+          <img src="./img/yellow_top_wave_01.png" alt="">
+        </div>
+        <div class="container_">
+          <div class="intro wow animate__animated animate__fadeInLeft">
+            <h1>ABOUT US</h1>
+            <span>The language teaching experts</span>
+          </div>
+          <div class="image wow animate__animated animate__fadeIn">
+            <img src="./img/hero_team.png" alt="..." />
+          </div>
+        </div>
+        <div class="violet_img_bottom wow animate__animated animate__fadeInDown">
+          <img src="./img/Violet_top_left_wave.png" alt="">
+        </div>
+      </section>
     </div>
-    <div class="section_yellowIMG_top">
-      <img src="./img/yellow_top_wave_01.png" alt="yellow img">
-    </div>
-    <div class="section_purpleIMG_bottom">
-      <img src="./img/Violet_top_left_wave.png" alt="img bottom">
-    </div>
-  </section> -->
+  </div>
   <section class="team-list">
     <div class="grid-container">
       <div class="grid-item  wow animate__animated animate__fadeIn" data-wow-delay="0.25s">
@@ -292,10 +458,21 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#sidebarCollapse").on("click", function () {
+        $("#sidebar").toggleClass("active");
+        $(this).toggleClass("active");
+      });
+    });
+  </script>
+  <script>
     new WOW().init();
-    </script>
+  </script>
+
 </body>
 
 </html>

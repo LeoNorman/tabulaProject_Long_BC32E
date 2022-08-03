@@ -1,3 +1,4 @@
+@import "../../util/sidebar/sidebar.css";
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +28,204 @@ li {
 a {
   list-style: none;
   text-decoration: none;
+}
+
+.wrapper #sidebar {
+  text-align: center;
+}
+.wrapper #sidebar .contact-sidebar .button {
+  box-shadow: 0 0 0 3em #b61984 inset;
+  padding: 1.1em 1.5em;
+  overflow: hidden;
+  line-height: 4;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 50px;
+  transition: all 300ms ease;
+}
+.wrapper #sidebar .contact-sidebar .button:hover {
+  box-shadow: 0 0 0 1px #b61984 inset;
+  color: #b61984;
+}
+.wrapper #sidebar .contact-sidebar .button i {
+  padding-right: 0.5em;
+}
+.wrapper #sidebar .contact_icon a {
+  color: #181818;
+  margin-left: 1em;
+  font-size: 11.7px;
+}
+.wrapper #sidebar .contact_icon a:hover {
+  color: #b61984;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  padding: 0 30px;
+}
+.header .container_ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container_ .nav-logo {
+  display: flex;
+  align-items: center;
+}
+.header .container_ .nav-logo .navbar_toggler {
+  display: none;
+  background: transparent;
+  border: none;
+}
+@media screen and (max-width: 1199px) {
+  .header .container_ .nav-logo .navbar_toggler {
+    display: block;
+    margin-right: 1em;
+  }
+}
+.header .container_ .nav-logo .navbar_toggler i {
+  font-size: 30px;
+}
+.header .container_ .nav-logo .navbar_brand img {
+  width: 80px;
+}
+@media screen and (max-width: 1199px) {
+  .header .container_ .nav-logo .navbar_brand img {
+    width: 48px;
+  }
+}
+.header .container_ .navbar_link {
+  display: flex;
+}
+@media screen and (max-width: 1199px) {
+  .header .container_ .navbar_link {
+    display: none;
+  }
+}
+.header .container_ .navbar_link ul {
+  margin: 0;
+}
+.header .container_ .navbar_link ul li {
+  display: inline;
+  margin-right: 50px;
+}
+.header .container_ .navbar_link ul li a {
+  font-weight: 600;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.header .container_ .navbar_link ul li a:hover {
+  color: #b61984;
+}
+.header .container_ .navbar_link ul .active {
+  position: relative;
+}
+.header .container_ .navbar_link ul .active::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -34px;
+  margin-left: -4px;
+  left: 50%;
+  pointer-events: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #b61984;
+}
+.header .container_ .navbar_link .contactbar .contact-item .button {
+  box-shadow: 0 0 0 3em #b61984 inset;
+  padding: 1.1em 1.5em;
+  overflow: hidden;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 50px;
+  transition: all 300ms ease;
+}
+.header .container_ .navbar_link .contactbar .contact-item .button:hover {
+  box-shadow: 0 0 0 1px #b61984 inset;
+  color: #b61984;
+}
+.header .container_ .navbar_link .contactbar .contact-item .button i {
+  padding-right: 0.5em;
+}
+.header .container_ .navbar_link .contactbar .contact-item .button span {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+.header .container_ .navbar_link .contactbar .contact-item a {
+  color: #181818;
+  margin-left: 1em;
+  font-size: 11.7px;
+}
+.header .container_ .navbar_link .contactbar .contact-item a:hover {
+  color: #b61984;
+}
+
+.aboutUs {
+  position: relative;
+}
+.aboutUs .yellow_image_top {
+  position: absolute;
+  top: 0;
+}
+.aboutUs .yellow_image_top img {
+  display: block;
+  width: 100%;
+}
+.aboutUs .violet_img_bottom {
+  position: absolute;
+  bottom: 0;
+}
+.aboutUs .violet_img_bottom img {
+  display: block;
+  width: 100%;
+}
+.aboutUs .container_ {
+  display: flex;
+  align-items: center;
+  padding: 4em 35px;
+}
+@media screen and (max-width: 992px) {
+  .aboutUs .container_ {
+    display: block;
+  }
+}
+.aboutUs .container_ .intro {
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .aboutUs .container_ .intro {
+    width: 100%;
+  }
+}
+.aboutUs .container_ .intro h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  color: #b61984;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+.aboutUs .container_ .intro span {
+  display: block;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+.aboutUs .container_ .image {
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .aboutUs .container_ .image {
+    width: 100%;
+  }
+}
+.aboutUs .container_ .image img {
+  width: 100%;
 }
 
 .team-list {
@@ -91,6 +290,7 @@ a {
   font-size: 15px;
   line-height: 1.8em;
   margin-bottom: 30px;
+  color: #000;
 }
 .team-list .bottom-coverage-image {
   position: absolute;
@@ -122,6 +322,10 @@ a {
 }
 .find_cource .container_section .left {
   padding: 20px 30px 20px 20px;
+}
+.find_cource .container_section .left .thumbnail img {
+  display: block;
+  width: 100%;
 }
 .find_cource .container_section .right {
   padding: 0 20px;
@@ -239,7 +443,7 @@ a {
   font-weight: 600;
   border: none;
   background: transparent;
-  background-color: #AA017E;
+  box-shadow: 0 0 0 3em #b61984 inset;
   color: #fff;
   display: block;
   width: 150px;
@@ -247,7 +451,7 @@ a {
   transition: all 0.3s;
 }
 .find_cource .container_section .right .div .form_container .form_content form .form-submit button:hover {
-  background-color: #fff;
+  box-shadow: 0 0 0 1px #b61984 inset;
   border: 1px solid #AA017E;
   color: #AA017E;
 }
@@ -298,14 +502,17 @@ footer .section_background .glob ul .clone {
   padding: 12px 0;
 }
 footer .section_background .contact .detail p {
-  margin-bottom: 10px;
+  margin: 0;
 }
 footer .section_background .contact .detail p i {
   font-size: 1rem;
+  color: #fff;
 }
 footer .section_background .contact .detail p span {
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding-left: 0.8em;
+  color: #fff;
+  font-weight: 400;
 }
 footer .section_background .contact .detail p a {
   display: inline-block;
@@ -344,10 +551,11 @@ footer .section_background .newsletter form input::placeholder {
 footer .section_background .newsletter form button {
   padding: 15px 84px;
   color: #000;
-  background-color: #fff;
-  border: none;
+  box-shadow: 0 0 0 3em #fff inset;
   text-align: center;
+  background-color: transparent;
   border-radius: 50px;
+  border: none;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 0.8em;
   letter-spacing: 1px;
@@ -355,7 +563,7 @@ footer .section_background .newsletter form button {
   transition: all 0.3s;
 }
 footer .section_background .newsletter form button:hover {
-  background-color: #b61984;
-  box-shadow: 0 0 0 1px #fff inset;
+  box-shadow: 0 0 0 1px #b61984 inset;
+  border: 1px solid #fff;
   color: #fff;
 }
